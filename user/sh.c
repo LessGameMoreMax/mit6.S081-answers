@@ -173,6 +173,31 @@ main(int argc, char *argv[])
         fprintf(2, "cannot cd %s\n", buf+3);
       continue;
     }
+    if(buf[0] == 'w' && buf[1] == 'a'
+            && buf[2] == 'i' && buf[3] == 't'){
+        buf[strlen(buf)-1] = 0;
+        char *t = 0;
+        for(int i = 4; buf[i]; ++i){
+            switch(buf[i]){
+                case ' ':
+                    if(t != 0)
+                        buf[i] = 0;
+                    break;
+                default:
+                    if(t == 0)
+                        t = &buf[i];
+            }
+        }
+        while(1){
+            int w = wait(0);
+            if(w == -1){
+                fprintf(2, "no such child\n");
+                break;
+            }
+            if(t == 0 || w == atoi(t)) break; 
+        }
+        continue;
+    }
     if(fork1() == 0)
       runcmd(parsecmd(buf));
     wait(0);
