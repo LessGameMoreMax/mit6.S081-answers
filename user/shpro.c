@@ -89,7 +89,7 @@ runcmd(struct cmd *cmd)
     }
     if(rcmd->cmd->type == EXEC){
         struct execcmd *ecmd = (struct execcmd*)(rcmd->cmd);
-        if(strcmp(ecmd->argv[0], "sh") == 0){
+        if(strcmp(ecmd->argv[0], "shpro") == 0){
             ecmd->argv[1] = "-f";
             ecmd->argv[2] = 0;
         }
