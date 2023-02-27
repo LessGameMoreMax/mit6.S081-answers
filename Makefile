@@ -199,7 +199,6 @@ UPROGS=\
 	$U/_find\
 	$U/_xargs\
 	$U/_uptime\
-	$U/_shpro\
 
 
 ifeq ($(LAB),$(filter $(LAB), pgtbl lock))
