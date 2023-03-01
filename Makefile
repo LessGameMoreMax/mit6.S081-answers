@@ -412,3 +412,6 @@ myapi.key:
 
 
 .PHONY: handin tarball tarball-pref clean grade handin-check
+
+debug:
+	riscv64-linux-gnu-gdb kernel/kernel
