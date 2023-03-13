@@ -7,9 +7,9 @@
       "kernel/entry.o",
       "kernel/entry.S"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/entry.S",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/entry.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/entry.S",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/entry.o"
   },
   {
     "arguments": [
@@ -19,8 +19,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -33,9 +33,9 @@
       "kernel/kalloc.o",
       "kernel/kalloc.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/kalloc.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/kalloc.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/kalloc.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/kalloc.o"
   },
   {
     "arguments": [
@@ -45,8 +45,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -59,9 +59,9 @@
       "kernel/string.o",
       "kernel/string.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/string.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/string.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/string.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/string.o"
   },
   {
     "arguments": [
@@ -71,8 +71,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -85,9 +85,9 @@
       "kernel/main.o",
       "kernel/main.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/main.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/main.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/main.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/main.o"
   },
   {
     "arguments": [
@@ -97,8 +97,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -111,9 +111,9 @@
       "kernel/vm.o",
       "kernel/vm.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/vm.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/vm.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/vm.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/vm.o"
   },
   {
     "arguments": [
@@ -123,8 +123,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -137,9 +137,9 @@
       "kernel/proc.o",
       "kernel/proc.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/proc.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/proc.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/proc.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/proc.o"
   },
   {
     "arguments": [
@@ -149,9 +149,9 @@
       "kernel/swtch.o",
       "kernel/swtch.S"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/swtch.S",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/swtch.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/swtch.S",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/swtch.o"
   },
   {
     "arguments": [
@@ -161,9 +161,9 @@
       "kernel/trampoline.o",
       "kernel/trampoline.S"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/trampoline.S",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/trampoline.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/trampoline.S",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/trampoline.o"
   },
   {
     "arguments": [
@@ -173,8 +173,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -187,9 +187,9 @@
       "kernel/trap.o",
       "kernel/trap.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/trap.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/trap.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/trap.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/trap.o"
   },
   {
     "arguments": [
@@ -199,8 +199,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -213,9 +213,9 @@
       "kernel/syscall.o",
       "kernel/syscall.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/syscall.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/syscall.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/syscall.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/syscall.o"
   },
   {
     "arguments": [
@@ -225,8 +225,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -239,9 +239,9 @@
       "kernel/sysproc.o",
       "kernel/sysproc.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/sysproc.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/sysproc.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/sysproc.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/sysproc.o"
   },
   {
     "arguments": [
@@ -251,8 +251,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -265,9 +265,9 @@
       "kernel/bio.o",
       "kernel/bio.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/bio.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/bio.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/bio.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/bio.o"
   },
   {
     "arguments": [
@@ -277,8 +277,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -291,9 +291,9 @@
       "kernel/fs.o",
       "kernel/fs.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/fs.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/fs.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/fs.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/fs.o"
   },
   {
     "arguments": [
@@ -303,8 +303,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -317,9 +317,9 @@
       "kernel/log.o",
       "kernel/log.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/log.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/log.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/log.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/log.o"
   },
   {
     "arguments": [
@@ -329,8 +329,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -343,9 +343,9 @@
       "kernel/sleeplock.o",
       "kernel/sleeplock.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/sleeplock.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/sleeplock.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/sleeplock.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/sleeplock.o"
   },
   {
     "arguments": [
@@ -355,8 +355,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -369,9 +369,9 @@
       "kernel/file.o",
       "kernel/file.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/file.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/file.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/file.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/file.o"
   },
   {
     "arguments": [
@@ -381,8 +381,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -395,9 +395,9 @@
       "kernel/pipe.o",
       "kernel/pipe.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/pipe.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/pipe.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/pipe.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/pipe.o"
   },
   {
     "arguments": [
@@ -407,8 +407,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -421,9 +421,9 @@
       "kernel/exec.o",
       "kernel/exec.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/exec.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/exec.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/exec.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/exec.o"
   },
   {
     "arguments": [
@@ -433,8 +433,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -447,9 +447,9 @@
       "kernel/sysfile.o",
       "kernel/sysfile.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/sysfile.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/sysfile.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/sysfile.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/sysfile.o"
   },
   {
     "arguments": [
@@ -459,9 +459,9 @@
       "kernel/kernelvec.o",
       "kernel/kernelvec.S"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/kernelvec.S",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/kernelvec.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/kernelvec.S",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/kernelvec.o"
   },
   {
     "arguments": [
@@ -471,8 +471,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -485,9 +485,9 @@
       "kernel/plic.o",
       "kernel/plic.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/plic.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/plic.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/plic.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/plic.o"
   },
   {
     "arguments": [
@@ -497,8 +497,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -511,9 +511,9 @@
       "kernel/virtio_disk.o",
       "kernel/virtio_disk.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/virtio_disk.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/virtio_disk.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/virtio_disk.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/virtio_disk.o"
   },
   {
     "arguments": [
@@ -523,8 +523,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -537,9 +537,9 @@
       "kernel/start.o",
       "kernel/start.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/start.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/start.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/start.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/start.o"
   },
   {
     "arguments": [
@@ -549,8 +549,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -563,9 +563,9 @@
       "kernel/console.o",
       "kernel/console.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/console.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/console.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/console.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/console.o"
   },
   {
     "arguments": [
@@ -575,8 +575,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -589,9 +589,9 @@
       "kernel/printf.o",
       "kernel/printf.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/printf.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/printf.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/printf.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/printf.o"
   },
   {
     "arguments": [
@@ -601,8 +601,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -615,9 +615,9 @@
       "kernel/uart.o",
       "kernel/uart.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/uart.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/uart.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/uart.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/uart.o"
   },
   {
     "arguments": [
@@ -627,8 +627,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -641,9 +641,9 @@
       "kernel/spinlock.o",
       "kernel/spinlock.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/kernel/spinlock.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/kernel/spinlock.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/spinlock.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/kernel/spinlock.o"
   },
   {
     "arguments": [
@@ -653,8 +653,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -671,16 +671,16 @@
       "user/initcode.o",
       "user/initcode.S"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/initcode.S",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/initcode.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/initcode.S",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/initcode.o"
   },
   {
     "arguments": [
       "/usr/bin/gcc",
       "-c",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-Werror",
       "-Wall",
       "-I.",
@@ -688,9 +688,9 @@
       "mkfs/mkfs",
       "mkfs/mkfs.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/mkfs/mkfs.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/mkfs/mkfs"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/mkfs/mkfs.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/mkfs/mkfs"
   },
   {
     "arguments": [
@@ -700,8 +700,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -714,9 +714,9 @@
       "user/ulib.o",
       "user/ulib.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/ulib.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/ulib.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/ulib.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/ulib.o"
   },
   {
     "arguments": [
@@ -726,8 +726,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -740,9 +740,9 @@
       "user/usys.o",
       "user/usys.S"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/usys.S",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/usys.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/usys.S",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/usys.o"
   },
   {
     "arguments": [
@@ -752,8 +752,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -766,9 +766,9 @@
       "user/printf.o",
       "user/printf.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/printf.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/printf.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/printf.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/printf.o"
   },
   {
     "arguments": [
@@ -778,8 +778,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -792,9 +792,9 @@
       "user/umalloc.o",
       "user/umalloc.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/umalloc.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/umalloc.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/umalloc.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/umalloc.o"
   },
   {
     "arguments": [
@@ -804,8 +804,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -818,9 +818,9 @@
       "user/cat.o",
       "user/cat.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/cat.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/cat.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/cat.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/cat.o"
   },
   {
     "arguments": [
@@ -830,8 +830,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -844,9 +844,9 @@
       "user/echo.o",
       "user/echo.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/echo.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/echo.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/echo.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/echo.o"
   },
   {
     "arguments": [
@@ -856,8 +856,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -870,9 +870,9 @@
       "user/forktest.o",
       "user/forktest.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/forktest.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/forktest.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/forktest.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/forktest.o"
   },
   {
     "arguments": [
@@ -882,8 +882,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -896,9 +896,9 @@
       "user/grep.o",
       "user/grep.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/grep.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/grep.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/grep.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/grep.o"
   },
   {
     "arguments": [
@@ -908,8 +908,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -922,9 +922,9 @@
       "user/init.o",
       "user/init.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/init.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/init.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/init.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/init.o"
   },
   {
     "arguments": [
@@ -934,8 +934,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -948,9 +948,9 @@
       "user/kill.o",
       "user/kill.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/kill.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/kill.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/kill.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/kill.o"
   },
   {
     "arguments": [
@@ -960,8 +960,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -974,9 +974,9 @@
       "user/ln.o",
       "user/ln.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/ln.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/ln.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/ln.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/ln.o"
   },
   {
     "arguments": [
@@ -986,8 +986,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -1000,9 +1000,9 @@
       "user/ls.o",
       "user/ls.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/ls.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/ls.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/ls.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/ls.o"
   },
   {
     "arguments": [
@@ -1012,8 +1012,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -1026,9 +1026,9 @@
       "user/mkdir.o",
       "user/mkdir.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/mkdir.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/mkdir.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/mkdir.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/mkdir.o"
   },
   {
     "arguments": [
@@ -1038,8 +1038,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -1052,9 +1052,9 @@
       "user/rm.o",
       "user/rm.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/rm.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/rm.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/rm.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/rm.o"
   },
   {
     "arguments": [
@@ -1064,8 +1064,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -1078,9 +1078,9 @@
       "user/sh.o",
       "user/sh.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/sh.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/sh.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/sh.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/sh.o"
   },
   {
     "arguments": [
@@ -1090,8 +1090,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -1104,9 +1104,9 @@
       "user/stressfs.o",
       "user/stressfs.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/stressfs.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/stressfs.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/stressfs.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/stressfs.o"
   },
   {
     "arguments": [
@@ -1116,8 +1116,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -1130,9 +1130,9 @@
       "user/usertests.o",
       "user/usertests.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/usertests.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/usertests.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/usertests.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/usertests.o"
   },
   {
     "arguments": [
@@ -1142,8 +1142,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -1156,9 +1156,9 @@
       "user/grind.o",
       "user/grind.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/grind.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/grind.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/grind.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/grind.o"
   },
   {
     "arguments": [
@@ -1168,8 +1168,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -1182,9 +1182,9 @@
       "user/wc.o",
       "user/wc.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/wc.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/wc.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/wc.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/wc.o"
   },
   {
     "arguments": [
@@ -1194,8 +1194,8 @@
       "-O",
       "-fno-omit-frame-pointer",
       "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
+      "-DSOL_SYSCALL",
+      "-DLAB_SYSCALL",
       "-mcmodel=medany",
       "-ffreestanding",
       "-fno-common",
@@ -1208,138 +1208,8 @@
       "user/zombie.o",
       "user/zombie.c"
     ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/zombie.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/zombie.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/riscv64-linux-gnu-gcc",
-      "-Wall",
-      "-Werror",
-      "-O",
-      "-fno-omit-frame-pointer",
-      "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
-      "-mcmodel=medany",
-      "-ffreestanding",
-      "-fno-common",
-      "-mno-relax",
-      "-I.",
-      "-fno-stack-protector",
-      "-fno-pie",
-      "-c",
-      "-o",
-      "user/sleep.o",
-      "user/sleep.c"
-    ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/sleep.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/sleep.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/riscv64-linux-gnu-gcc",
-      "-Wall",
-      "-Werror",
-      "-O",
-      "-fno-omit-frame-pointer",
-      "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
-      "-mcmodel=medany",
-      "-ffreestanding",
-      "-fno-common",
-      "-mno-relax",
-      "-I.",
-      "-fno-stack-protector",
-      "-fno-pie",
-      "-c",
-      "-o",
-      "user/pingpong.o",
-      "user/pingpong.c"
-    ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/pingpong.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/pingpong.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/riscv64-linux-gnu-gcc",
-      "-Wall",
-      "-Werror",
-      "-O",
-      "-fno-omit-frame-pointer",
-      "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
-      "-mcmodel=medany",
-      "-ffreestanding",
-      "-fno-common",
-      "-mno-relax",
-      "-I.",
-      "-fno-stack-protector",
-      "-fno-pie",
-      "-c",
-      "-o",
-      "user/primes.o",
-      "user/primes.c"
-    ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/primes.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/primes.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/riscv64-linux-gnu-gcc",
-      "-Wall",
-      "-Werror",
-      "-O",
-      "-fno-omit-frame-pointer",
-      "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
-      "-mcmodel=medany",
-      "-ffreestanding",
-      "-fno-common",
-      "-mno-relax",
-      "-I.",
-      "-fno-stack-protector",
-      "-fno-pie",
-      "-c",
-      "-o",
-      "user/find.o",
-      "user/find.c"
-    ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/find.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/find.o"
-  },
-  {
-    "arguments": [
-      "/usr/bin/riscv64-linux-gnu-gcc",
-      "-Wall",
-      "-Werror",
-      "-O",
-      "-fno-omit-frame-pointer",
-      "-ggdb",
-      "-DSOL_UTIL",
-      "-DLAB_UTIL",
-      "-mcmodel=medany",
-      "-ffreestanding",
-      "-fno-common",
-      "-mno-relax",
-      "-I.",
-      "-fno-stack-protector",
-      "-fno-pie",
-      "-c",
-      "-o",
-      "user/xargs.o",
-      "user/xargs.c"
-    ],
-    "directory": "/home/sablin/Projects/xv6/mit6.S081",
-    "file": "/home/sablin/Projects/xv6/mit6.S081/user/xargs.c",
-    "output": "/home/sablin/Projects/xv6/mit6.S081/user/xargs.o"
+    "directory": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021",
+    "file": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/zombie.c",
+    "output": "/home/sablin/Projects/xv6/lab-offical/xv6-labs-2021/user/zombie.o"
   }
 ]

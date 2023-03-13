@@ -193,12 +193,8 @@ UPROGS=\
 	$U/_grind\
 	$U/_wc\
 	$U/_zombie\
-	$U/_sleep\
-	$U/_pingpong\
-	$U/_primes\
-	$U/_find\
-	$U/_xargs\
-	$U/_uptime\
+	$U/_trace\
+	$U/_sysinfotest\
 
 
 ifeq ($(LAB),$(filter $(LAB), pgtbl lock))
@@ -261,7 +257,6 @@ endif
 UEXTRA=
 ifeq ($(LAB),util)
 	UEXTRA += user/xargstest.sh
-	UEXTRA += user/shone.sh
 endif
 
 
@@ -412,6 +407,3 @@ myapi.key:
 
 
 .PHONY: handin tarball tarball-pref clean grade handin-check
-
-debug:
-	riscv64-linux-gnu-gdb kernel/kernel

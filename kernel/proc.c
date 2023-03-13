@@ -97,6 +97,15 @@ allocpid() {
   return pid;
 }
 
+//Get UNUSED process
+int
+unpronum(void){
+    int c = 0;
+    for(int i = 0; i != NPROC; ++i)
+        if(proc[i].state != UNUSED) ++c;
+    return c;
+}
+
 // Look in the process table for an UNUSED proc.
 // If found, initialize state required to run in the kernel,
 // and return with p->lock held.
@@ -289,6 +298,8 @@ fork(void)
   }
   np->sz = p->sz;
 
+  //copy the mask
+  np->trace_mask = p->trace_mask;
   // copy saved user registers.
   *(np->trapframe) = *(p->trapframe);
 
@@ -357,7 +368,6 @@ exit(int status)
   iput(p->cwd);
   end_op();
   p->cwd = 0;
-
   acquire(&wait_lock);
 
   // Give any children to init.
@@ -594,6 +604,27 @@ kill(int pid)
     release(&p->lock);
   }
   return -1;
+}
+
+//Write mask to the process mask.
+int
+trace(int mask){
+    struct proc* p = myproc();
+    p->trace_mask = mask;
+    return 0;
+}
+
+//Get system info
+int
+sysinfo(uint64 addr){ 
+    struct proc *p = myproc();
+    uint64 fm = freememnum(); 
+    uint64 np = unpronum();
+    if(copyout(p->pagetable, addr, (char *)&fm, sizeof(fm)) < 0)
+        return -1;
+    if(copyout(p->pagetable, addr + 8, (char *)&np, sizeof(np)) < 0)
+        return -1;
+    return 0;
 }
 
 // Copy to either a user address, or kernel address,
