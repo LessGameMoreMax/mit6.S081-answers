@@ -87,13 +87,6 @@ runcmd(struct cmd *cmd)
       fprintf(2, "open %s failed\n", rcmd->file);
       exit(1);
     }
-    if(rcmd->cmd->type == EXEC){
-        struct execcmd *ecmd = (struct execcmd*)(rcmd->cmd);
-        if(strcmp(ecmd->argv[0], "sh") == 0){
-            ecmd->argv[1] = "-f";
-            ecmd->argv[2] = 0;
-        }
-    }
     runcmd(rcmd->cmd);
     break;
 
@@ -139,19 +132,18 @@ runcmd(struct cmd *cmd)
 }
 
 int
-getcmd(char *buf, int nbuf, char *arg)
+getcmd(char *buf, int nbuf)
 {
-  if(arg == 0 || strcmp(arg, "-f") != 0)
-    fprintf(2, "$ ");
+  fprintf(2, "$ ");
   memset(buf, 0, nbuf);
   gets(buf, nbuf);
-  if(buf[0] == 0) //EOF
-      return -1;
+  if(buf[0] == 0) // EOF
+    return -1;
   return 0;
 }
 
 int
-main(int argc, char *argv[])
+main(void)
 {
   static char buf[100];
   int fd;
@@ -165,38 +157,13 @@ main(int argc, char *argv[])
   }
 
   // Read and run input commands.
-  while(getcmd(buf, sizeof(buf), argv[1]) >= 0){
+  while(getcmd(buf, sizeof(buf)) >= 0){
     if(buf[0] == 'c' && buf[1] == 'd' && buf[2] == ' '){
       // Chdir must be called by the parent, not the child.
       buf[strlen(buf)-1] = 0;  // chop \n
       if(chdir(buf+3) < 0)
         fprintf(2, "cannot cd %s\n", buf+3);
       continue;
-    }
-    if(buf[0] == 'w' && buf[1] == 'a'
-            && buf[2] == 'i' && buf[3] == 't'){
-        buf[strlen(buf)-1] = 0;
-        char *t = 0;
-        for(int i = 4; buf[i]; ++i){
-            switch(buf[i]){
-                case ' ':
-                    if(t != 0)
-                        buf[i] = 0;
-                    break;
-                default:
-                    if(t == 0)
-                        t = &buf[i];
-            }
-        }
-        while(1){
-            int w = wait(0);
-            if(w == -1){
-                fprintf(2, "no such child\n");
-                break;
-            }
-            if(t == 0 || w == atoi(t)) break; 
-        }
-        continue;
     }
     if(fork1() == 0)
       runcmd(parsecmd(buf));
