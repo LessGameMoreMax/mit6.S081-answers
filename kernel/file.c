@@ -12,12 +12,90 @@
 #include "file.h"
 #include "stat.h"
 #include "proc.h"
+#include "memlayout.h"
+#include "fcntl.h"
 
 struct devsw devsw[NDEV];
 struct {
   struct spinlock lock;
   struct file file[NFILE];
 } ftable;
+
+struct vma vmas[NVMA];
+
+uint64
+mmap(uint64 addr, int length, int prot, int flags,
+        int fd, int offset){
+    for(int i = 0;i != NVMA; ++i){
+        if(vmas[i].pid != -1) continue;
+        struct proc *p = myproc(); 
+        struct file *f = p->ofile[fd];
+        if(f == 0) return -1;
+        if(f->writable == 0 && (prot & PROT_WRITE) &&
+                (flags & MAP_SHARED))
+            return -1;
+        vmas[i].pid = p->pid;
+        p->sz = PGROUNDUP(p->sz);
+        vmas[i].address = p->sz;
+        p->sz += PGROUNDUP(length);
+        vmas[i].length = length;
+        vmas[i].prot = prot;
+        vmas[i].flags = flags;
+        vmas[i].file = f;
+        filedup(f);
+        return vmas[i].address;
+    }
+    panic("vma table is full!");
+}
+
+int
+min(int a, int b){
+    if(a < b) return a;
+    return b;
+}
+
+int
+munmap(uint64 addr, int length){
+    int temp = length;
+    struct proc *p = myproc();
+    for(int i = 0;i != NVMA; ++i){
+        if(vmas[i].pid != p->pid) continue;
+        if(addr < vmas[i].address ||
+                addr >= vmas[i].address + vmas[i].length)
+            continue;
+        int end = PGROUNDUP(length) / PGSIZE;
+        for(int j = 0;j != end; ++j){
+            pte_t *pte = walk(p->pagetable, addr + j * PGSIZE, 0);
+            if((*pte & PTE_V) == 0) {
+                temp -= PGSIZE;
+                continue;
+            }
+            if(vmas[i].flags & MAP_SHARED){
+                begin_op();
+                ilock(vmas[i].file->ip);
+                writei(vmas[i].file->ip, 0, PTE2PA(*pte), 
+                        addr + j * PGSIZE - vmas[i].address, 
+                        min(PGSIZE, temp));
+                temp -= PGSIZE;
+                iunlock(vmas[i].file->ip);
+                end_op();
+            }
+            uvmunmap(p->pagetable, addr + j * PGSIZE, 1, 1);
+        }
+        if(length == vmas[i].length){
+            fileclose(vmas[i].file);
+            vmas[i].pid = -1;
+        }
+        return 0;
+    }
+    return -1;
+}
+
+void
+vmainit(void){
+    for(int i = 0;i != NVMA; ++i)
+        vmas[i].pid = -1;
+}
 
 void
 fileinit(void)

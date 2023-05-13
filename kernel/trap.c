@@ -5,11 +5,16 @@
 #include "spinlock.h"
 #include "proc.h"
 #include "defs.h"
+#include "sleeplock.h"
+#include "fs.h"
+#include "file.h"
+#include "fcntl.h"
 
 struct spinlock tickslock;
 uint ticks;
 
 extern char trampoline[], uservec[], userret[];
+extern struct vma vmas[];
 
 // in kernelvec.S, calls kerneltrap().
 void kernelvec();
@@ -67,6 +72,47 @@ usertrap(void)
     syscall();
   } else if((which_dev = devintr()) != 0){
     // ok
+  } else if(r_scause() == 15 || r_scause() == 13){
+      uint64 address = r_stval();
+      struct vma *vma;
+      if(address >= MAXVA){
+        p->killed = 1;
+      }else{
+        int find = 0;
+        for(int i = 0;i != NVMA; ++i){
+          if(vmas[i].pid != p->pid)
+            continue;
+          if(address >= vmas[i].address + vmas[i].length ||
+                  address < vmas[i].address)
+              continue;
+          vma = vmas + i;
+          find = 1;
+          break;
+        }
+        if(find == 0){
+          p->killed = 1;
+        }else{
+            uint64 offset = PGROUNDDOWN(address - vma->address);
+            ilock(vma->file->ip);
+            void *addr = kalloc();
+            memset(addr, 0, PGSIZE);
+            if(addr == 0){
+                iunlock(vma->file->ip);
+                p->killed = 1;
+            }else{
+                int perm = 0;
+                if(vma->prot & PROT_READ) perm |= PTE_R;
+                if(vma->prot & PROT_WRITE) perm |= PTE_W;
+                if(vma->prot & PROT_EXEC) perm |= PTE_X;
+                readi(vma->file->ip,0,(uint64)addr,offset,PGSIZE);
+                iunlock(vma->file->ip);
+                if(mappages(p->pagetable, address,
+                        PGSIZE, (uint64)addr, perm|PTE_U) == -1){
+                    p->killed = 1;
+                }
+            }
+        }
+      }
   } else {
     printf("usertrap(): unexpected scause %p pid=%d\n", r_scause(), p->pid);
     printf("            sepc=%p stval=%p\n", r_sepc(), r_stval());
