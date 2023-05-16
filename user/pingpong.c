@@ -2,45 +2,51 @@
 #include "kernel/stat.h"
 #include "user/user.h"
 
+#define N 5
+char buf[N];
+
+void
+pong(int *parent_to_child, int *child_to_parent) {
+  if (read(parent_to_child[0], buf, N) < 0) {
+    printf("read failed\n");
+  }
+  printf("%d: received %s\n", getpid(), buf);
+  if (write(child_to_parent[1], "pong", 4) != 4) {
+    printf("write failed\n");
+  }
+}
+
+void
+ping(int *parent_to_child, int *child_to_parent) {
+  
+  if (write(parent_to_child[1], "ping", 4) != 4) {
+    printf("write failed\n");
+  }
+  if (read(child_to_parent[0], buf, N) < 0) {
+    printf("read failed\n");
+  }
+  printf("%d: received %s\n", getpid(), buf);
+}
+
 int
-main(int argc, char *argv[]){
-    int pipefd_one[2];
-    pipe(pipefd_one);
+main(int argc, char *argv[])
+{
+  int parent_to_child[2];
+  int child_to_parent[2];
 
-    int pipefd_two[2];
-    pipe(pipefd_two);
+  int pid;
 
-    char byte_one = {'H'};
-    int rc = fork();
-    if(rc < 0){
-        fprintf(2, "fork fail\n");
-        exit(1);
-    }else if(rc == 0){
-        char bytec;
-        close(0);
-        dup(pipefd_one[0]);
-        close(pipefd_one[0]);
-        read(0, &bytec, 1);
-        while(bytec != 'H');
-        fprintf(1, "%d: received ping\n", getpid());
-        close(1);
-        dup(pipefd_two[1]);
-        close(pipefd_two[1]);
-        write(1, &bytec, 1);
-    }else{
-        int soc = dup(1);
-        close(1);
-        dup(pipefd_one[1]);
-        close(pipefd_one[1]);
-        write(1, &byte_one, 1);
-        wait(0);
-        char bytep;
-        close(0);
-        dup(pipefd_two[0]);
-        close(pipefd_two[0]);
-        read(0, &bytep, 1);
-        fprintf(soc, "%d: received pong\n", getpid());
-        fprintf(soc, "char is : %c\n", bytep);
-    }
-    exit(0);
+  if (pipe(parent_to_child) < 0 || pipe(child_to_parent) < 0) {
+    printf("pipe failed\n");
+  }
+  if ((pid = fork()) < 0) {
+    printf("fork failed\n");
+  }
+  if (pid == 0) {
+    pong(parent_to_child, child_to_parent);
+  } else {
+    ping(parent_to_child, child_to_parent);
+  }
+  
+  exit(0);
 }

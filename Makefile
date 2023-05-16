@@ -3,6 +3,9 @@
 # (e.g., LAB=util).  Run make grade to test solution with the lab's
 # grade script (e.g., grade-lab-util).
 
+# To generate a candidate student repository for a lab, run e.g.
+#   ./make-lab util
+
 -include conf/lab.mk
 
 K=kernel
@@ -193,12 +196,8 @@ UPROGS=\
 	$U/_grind\
 	$U/_wc\
 	$U/_zombie\
-	$U/_sleep\
-	$U/_pingpong\
-	$U/_primes\
-	$U/_find\
-	$U/_xargs\
-	$U/_uptime\
+
+
 
 
 ifeq ($(LAB),$(filter $(LAB), pgtbl lock))
@@ -261,7 +260,6 @@ endif
 UEXTRA=
 ifeq ($(LAB),util)
 	UEXTRA += user/xargstest.sh
-	UEXTRA += user/shone.sh
 endif
 
 
@@ -346,7 +344,7 @@ grade:
 ##
 
 
-WEBSUB := https://6828.scripts.mit.edu/2021/handin.py
+WEBSUB := https://6828.scripts.mit.edu/2020/handin.py
 
 handin: tarball-pref myapi.key
 	@SUF=$(LAB); \
@@ -378,7 +376,7 @@ handin-check:
 		test "$$r" = y; \
 	fi
 
-UPSTREAM := $(shell git remote -v | grep -m 1 "xv6-labs-2021" | awk '{split($$0,a," "); print a[1]}')
+UPSTREAM := $(shell git remote -v | grep -m 1 "xv6-labs-2020" | awk '{split($$0,a," "); print a[1]}')
 
 tarball: handin-check
 	git archive --format=tar HEAD | gzip > lab-$(LAB)-handin.tar.gz
@@ -412,6 +410,3 @@ myapi.key:
 
 
 .PHONY: handin tarball tarball-pref clean grade handin-check
-
-debug:
-	riscv64-linux-gnu-gdb kernel/kernel
